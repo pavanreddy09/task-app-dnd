@@ -26,6 +26,9 @@ app.use(session({
 app.use('/api/task', taskRoutes)
 app.use('/api/user', userRoutes)
 
+app.get("/hello",(req,res)=>{
+    res.send("hello welcome")
+})
 const PORT = process.env.PORT || 4003
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
