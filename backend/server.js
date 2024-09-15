@@ -11,7 +11,7 @@ connectToDB();
 
 app.use(cors({
    origin: process.env.FRONT_END_URL,
-   methods: ["GET","POST","PUT","DELETE"],
+   methods: "GET,HEAD,POST,PUT,DELETE,PATCH",
    credentials: true
 }
 ))
