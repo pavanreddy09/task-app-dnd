@@ -65,12 +65,16 @@ const TaskForm = ({
         </div>
         <div className="field">
           <button disabled={isLoading} aria-label={`${buttonText}-button`}>
-            {buttonText}
+            {isLoading ? (
+              <CircularProgress sx={{ color: "white" }} size={"16px"} />
+            ) : (
+              { buttonText }
+            )}
           </button>
         </div>
       </form>
     </div>
   );
-}
+};
 
 export default TaskForm;

@@ -100,7 +100,7 @@ function LoginPage() {
                 />
               </div>
               <div className="form-div">
-                <button type="submit">
+                <button type="submit" disabled={isLoading}>
                   {isLoading ? (
                     <CircularProgress sx={{ color: "white" }} size={"16px"} />
                   ) : (
