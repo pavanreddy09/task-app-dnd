@@ -1,0 +1,352 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  gap: 10px;
+  /* background-color: red; */
+}
+
+.column {
+  background-color: #f0f0f0;
+  padding: 10px;
+  /* margin: 10px; */
+  border-radius: 5px;
+  /* flex-grow: 1; */
+  min-height: 400px;
+  width: 600px;
+}
+
+.task {
+  background-color: #cfe2f3;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  /* height: 200px; */
+}
+
+button {
+  margin-right: 8px;
+}
+
+h2 {
+  background-color: rgb(102, 122, 220);
+  color: white;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.search-sort-container, .addtask-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  padding: 15px;
+}
+
+.search-container, .sort-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.search-container input {
+  width: 250px;
+}
+.search-container input, .sort-container select {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  /* font-size: 16px; */
+}
+
+.addtask-button-container button {
+  border: none;
+  outline: none;
+  width: 150px;
+  padding: 10px 12px;
+  background-color: rgb(102, 122, 220);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(102, 122, 220);
+  padding: 10px 55px;
+  height: 60px;
+}
+
+.logout-btn {
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 8px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn, .signup-btn {
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 8px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.profile-info,
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+.avatar {
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.auth-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  /* padding: 10px 12px;
+  border: 2px solid blue;
+  border-radius: 6px; */
+}
+
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border: 2px solid blue;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-div input {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+.form-div {
+  width: 350px;
+}
+.form-div button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 14px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.error-div {
+  width: 350px;
+  background-color: rgb(253, 175, 175);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.form-bottom {
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 0px;
+}
+.form-bottom button {
+   border: none;
+   padding: 10px 12px;
+   background-color: blue;
+   border-radius: 6px;
+   color: white;
+   cursor: pointer;
+}
+
+.taskform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  /* background: radial-gradient(
+    circle,
+    rgba(72, 92, 223, 1) 0%,
+    rgba(223, 225, 225, 0.6134103299522935) 100%
+  ); */
+}
+
+.formbg {
+  margin: 0px auto;
+  width: 100%;
+  max-width: 448px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px,
+    rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  padding: 25px 20px;
+}
+.formbg input,
+.formbg select,
+.formbg textarea {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.field input,
+textarea {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.field button {
+  background-color: rgb(84, 105, 212);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgb(84, 105, 212) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 15px 0px;
+  text-transform: uppercase;
+}
+.span {
+  font-size: 1.5rem;
+  padding: 15px;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+  width: 448px;
+}
+
+.no-tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.task h5 {
+  margin-top: 10px;
+  /* height: 50px; */
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.task p {
+  margin-top: 30px;
+}
+
+.operation-buttons {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.operation-buttons button {
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.delete-btn {
+  background-color: red;
+}
+.edit-btn {
+  background-color: rgb(102, 122, 220);
+}
+.view-btn {
+  background-color: rgb(58, 58, 251);
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #3498db; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+h1 {
+  color: blue;
+}
+
+
