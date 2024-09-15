@@ -7,6 +7,7 @@ import SignupPage from "./pages/SignupPage";
 import CreateTask from "./pages/CreateTask";
 import UpdateTask from "./pages/UpdateTask";
 import PageLayout from "./layout/PageLayout";
+import Pagenotfound from "./components/Pagenotfound";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/task/create" element={<CreateTask />} />
             <Route path="/task/edit/:id" element={<UpdateTask />} />
           </Route>
+          <Route path="*" element={<Pagenotfound />}/>
         </Routes>
       </BrowserRouter>
     </>

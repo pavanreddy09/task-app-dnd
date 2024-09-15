@@ -377,4 +377,7 @@ h1 {
   .avatar {
     margin-right: 2px;
   }
+  .auth-main {
+    width: auto;
+  }
 }
