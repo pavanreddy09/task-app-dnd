@@ -15,12 +15,12 @@ Clone the This repo.
 First Move to backend Folder (cd backend)
 # Backend
 create .env file add these fields 
-### `PORT = 4000
+PORT = 4000
 DB_URL = <mongodb_url>
 JWT_SECRET = <jwt_secret>
 CLIENT_ID = <google_client_id>
 CLIENT_SECRET = <google_client_secret>
-FRONT_END_URL = http://localhost:3000`
+FRONT_END_URL = http://localhost:3000
 
 First install the dependencies.
 
