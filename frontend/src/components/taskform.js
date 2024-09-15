@@ -69,7 +69,7 @@ const TaskForm = ({
             {isLoading ? (
               <CircularProgress sx={{ color: "white" }} size={"16px"} />
             ) : (
-              { buttonText }
+              buttonText 
             )}
           </button>
         </div>
