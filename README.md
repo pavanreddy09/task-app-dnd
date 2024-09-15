@@ -32,6 +32,9 @@ After that you can Run below command to Run the backend server:
 it will start runing the server with the nodemon.
 
 # Frontend
+create .env file and add field
+REACT_APP_API_URL = 'http://localhost:4000'
+
 Move to the directory frontend(cd frontend)
 
 In the frontend directory, you can run below command to install the dependencies.
